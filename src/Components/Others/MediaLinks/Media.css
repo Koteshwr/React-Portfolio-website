@@ -1,0 +1,40 @@
+ul {
+  margin: 1em 0;
+}
+
+ul li {
+  /* margin: 1em 0; */
+  display: inline-block;
+  padding: 0 1em;
+}
+ul li i {
+  font-size: 2em;
+  color: #a3a3a3;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+ul li i:hover {
+  color: #fff;
+  scale: 1.2;
+}
+
+.contact-card ul{
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+footer ul{
+  font-size: 10px;
+}
+footer ul li i{
+  padding-right: 1em;
+}
+@media (max-width: 480px) {
+
+
+  ul li {
+    padding: 0 1em;
+    margin: 2em 0;
+  }
+}

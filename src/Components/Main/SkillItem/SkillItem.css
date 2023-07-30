@@ -1,0 +1,73 @@
+.item {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 8em;
+  height: 8em;
+  margin: 2.5em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.item:hover{
+  transform: scale(1.2);
+}
+.js-icon {
+  position: relative;
+  top: -20px;
+}
+#JavaScript {
+  position: relative;
+  bottom: 32px;
+}
+#MySQL {
+  position: relative;
+  bottom: 12px;
+}
+
+.icon i {
+  margin-top: 13px;
+  display: flex;
+  font-size: 4em;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.icon svg {
+  margin-top: 13px;
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.item .item-title {
+  bottom: 10px;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .item{
+        margin: 1em;
+    }
+    #JavaScript {
+        position: relative;
+        bottom: 45px;
+      }
+      #MySQL {
+        position: relative;
+        bottom: 25px;
+      }
+      .mdb {
+        height:70px;
+        width: 70px;
+      }
+      .sql{
+        height:100px;
+        width: 100px;
+      }
+}

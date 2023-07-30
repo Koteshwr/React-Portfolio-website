@@ -1,0 +1,145 @@
+
+.navbar {
+    padding: 0.5em;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+.navbar .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+  }
+  
+  .menu div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+  }
+  .menu-btn {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #fff;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .btn {
+    text-align: center;
+    width: 9em;
+    font-weight: bold;
+    font-size: 1.05em;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    margin: 1em 2em;
+    border-radius: 0.6em;
+    background: #fff;
+    color: #000;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #000;
+    color: #fff;
+  }
+  .navbar a,
+  .menu-btn {
+    transition: 0.3s;
+  }
+  .navbar a:hover,
+  .menu-btn:hover {
+    color: #ccc;
+  }
+  .brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+  }
+  .navbar .btn{
+      margin: 0;
+  }
+  @media screen and (max-width : 900px)
+{
+    header h1, .card h1{
+        font-size: 2.5em;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .menu{
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 3.7em;
+        left: 0;
+        width: 100%;
+        height: 0;
+        padding: 0 2.5em ;
+        transition: 0.5s ease-in-out;
+        overflow-y: scroll;
+    }
+    .menu , .menu div{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+    .menu a{
+        padding: 0.7em 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .menu .brand{
+        display: none;
+    }
+
+    .menu-open{
+        height: 15em;
+        padding: 2.5em 2em;
+    }
+}
+
+@media screen and (max-width : 500px)
+{
+    html{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width : 900px){
+    .header .menu .brand{
+        margin: 0 1em;
+    }
+    .container > .brand{
+        display: none;   
+    }
+}

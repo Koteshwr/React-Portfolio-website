@@ -1,0 +1,233 @@
+header,
+footer {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+.card {
+  padding: 3em 2em 1em 2em;
+  height: 100vh;
+  background-color: rgba(34, 34, 34, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+/* .card{
+    box-shadow: -1em 0 2em 1em rgba(0,0,0,0.3);
+} */
+header::before,
+.card::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+header img,
+.card img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header .text {
+  max-width: 600px;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.card .text {
+  width: 70vw;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.card h1 {
+  font-size: 2.5em;
+  margin-top: 1em;
+}
+header h2 {
+  font-size: 2.5em;
+  margin-top: 1em;
+}
+header p {
+  margin: 2em 0;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 10pxpx;
+  color: #dbdbdb;
+}
+.card p {
+  margin: 2em 0;
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 10pxpx;
+  color: #dbdbdb;
+}
+.btn {
+  text-align: center;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 1.05em;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  margin: 1em 2em;
+  border-radius: 0.6em;
+  background: #fff;
+  color: #000;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.btn-secondary {
+  cursor: pointer;
+  margin-bottom: 3em;
+  border: 3px #fff solid;
+  background: transparent;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background: rgb(255, 255, 255, 0.3);
+  color: #fff;
+}
+header,
+.card {
+  background-color: black;
+}
+header img {
+  opacity: 0.6;
+}
+.card img {
+  opacity: 0.5;
+}
+
+
+.text .var-text {
+  color: #fff;
+  font-size: 1em;
+}
+
+.read-more {
+  padding: 20px;
+  text-align: left;
+  position: absolute;
+  top: 0.5em;
+  bottom: 1em;
+  padding: 0px 40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  overflow: scroll;
+  z-index: 0;
+  margin-bottom: 2.5em;
+  display: none;
+  transition: 0.3s ease-in-out;
+}
+.read-more {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.read-more .btn {
+  align-self: center;
+  margin-bottom: 5px;
+}
+.read-btns{
+  flex-direction: column;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills{
+  padding:20px;
+}
+.skill-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* #projects{
+  width: 100vw;
+  height: fit-content;
+} */
+
+.card .project-card{
+  width: 100vw;
+  height: fit-content;
+  padding: 0;
+}
+
+.contact-card .text{
+  width: 100vw;
+}
+.contact-card h1{
+  padding: 1em;
+  margin-top: 2em;
+}
+.contact-card h2{
+  padding: 1em;
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 900px) {
+  header h2,
+  .card h1 {
+    font-size: 2.5em;
+  }
+}
+
+
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+  header p {
+    padding: 0 2em;
+    font-size: 1.6em;
+  }
+  header ul li {
+    padding: 0 1em;
+    margin: 2em 0;
+  }
+  .card .text {
+    width: 100vw;
+    height: 100%;
+  }
+  .read-more {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .read-more p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .header .menu .brand {
+    margin: 0 1em;
+  }
+  .container > .brand {
+    display: none;
+  }
+}

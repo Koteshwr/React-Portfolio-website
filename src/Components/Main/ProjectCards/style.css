@@ -1,0 +1,141 @@
+
+
+.work-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 150px 50px;
+    padding: 50px 50px;
+}
+
+.work-container .work-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: rgba(35, 35, 35, 0.40);
+    border-radius: 20px;
+    transition: 0.5s;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+}
+
+.work-container .work-card:hover {
+    min-height: 400px;
+}
+
+.work-container .work-card .img-box {
+    position: absolute;
+    top: 40px;
+    width: 280px;
+    height: 170px;
+    background: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.work-container .work-card:hover .img-box {
+
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.work-container .work-card .img-box img {
+    opacity: 1;
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(100%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work-container .work-card .content {
+    position: absolute;
+    top: 240px;
+    width: 100%;
+    height: 35px;
+    padding: 0px 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.work-container .work-card:hover .content {
+    top: 100px;
+    height: fit-content;
+    /* overflow-y: scroll; */
+}
+
+.work-container .work-card .content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.work-container .work-card .content p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.work-container .work-card .content .btn{
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 1em;
+}
+
+
+.buzz{
+    font-weight: 700;
+}
+
+@media (max-width: 480px) {
+
+    .project-card{
+        width: 100%;
+        height: fit-content;
+        overflow-y: scroll;
+    }
+    .project-card::-webkit-scrollbar{
+        display: none;
+    }
+    .work-container{
+        gap: 100px 2px;
+        padding: 40px 2px;
+
+    }
+    .work-container .work-card {
+        width: 600px;
+        border-radius: 15px;
+    }
+
+    .work-container .work-card .img-box {
+        top: 20px;
+        width: 230px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .work-container .work-card .content{
+        top: 245px;
+        height: 50px;
+    }
+    
+
+    .work-container .work-card .content p {
+
+        font-size: 0.8rem;
+    }
+
+
+    
+}
